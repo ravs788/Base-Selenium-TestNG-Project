@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-12T06:33:55 IST" name="Suite" finished-at="2020-07-12T06:34:14 IST" duration-ms="19178">
+    <groups>
+    </groups>
+    <test started-at="2020-07-12T06:33:55 IST" name="Test" finished-at="2020-07-12T06:34:14 IST" duration-ms="19178">
+      <class name="basePackage.TestOrangeHRM">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:33:55 IST" name="launchBrowser" finished-at="2020-07-12T06:34:04 IST" duration-ms="9107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginApp()[pri:1, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:34:04 IST" name="loginApp" finished-at="2020-07-12T06:34:10 IST" duration-ms="5743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method signature="searchUser()[pri:2, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:34:10 IST" name="searchUser" finished-at="2020-07-12T06:34:12 IST" duration-ms="2328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchUser -->
+        <test-method signature="logOut()[pri:3, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:34:12 IST" name="logOut" finished-at="2020-07-12T06:34:13 IST" duration-ms="1193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:34:13 IST" name="afterClass" finished-at="2020-07-12T06:34:14 IST" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- basePackage.TestOrangeHRM -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
