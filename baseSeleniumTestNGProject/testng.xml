@@ -2,12 +2,18 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  			<include name="Smoke"/>
+  		</run>
+  	</groups>
     <classes>
       <class name="basePackage.TestOrangeHRM"/>
       	<methods>
       		<include name="loginApp"/>
       		<include name="searchUser"/>
       		<include name="logOut"/>
+      		<exclude name="searchEmployee"/>
       	</methods>
     </classes>
   </test> <!-- Test -->

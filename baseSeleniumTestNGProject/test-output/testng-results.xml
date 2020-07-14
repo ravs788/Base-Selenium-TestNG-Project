@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-12T06:33:55 IST" name="Suite" finished-at="2020-07-12T06:34:14 IST" duration-ms="19178">
+  <suite started-at="2020-07-14T06:54:05 IST" name="Suite" finished-at="2020-07-14T06:54:24 IST" duration-ms="18951">
     <groups>
+      <group name="Sanity">
+        <method signature="TestOrangeHRM.loginApp()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" name="loginApp" class="basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.logOut()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" name="logOut" class="basePackage.TestOrangeHRM"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="TestOrangeHRM.loginApp()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" name="loginApp" class="basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.searchUser()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" name="searchUser" class="basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.logOut()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" name="logOut" class="basePackage.TestOrangeHRM"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2020-07-12T06:33:55 IST" name="Test" finished-at="2020-07-12T06:34:14 IST" duration-ms="19178">
+    <test started-at="2020-07-14T06:54:05 IST" name="Test" finished-at="2020-07-14T06:54:24 IST" duration-ms="18951">
       <class name="basePackage.TestOrangeHRM">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:33:55 IST" name="launchBrowser" finished-at="2020-07-12T06:34:04 IST" duration-ms="9107" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" started-at="2020-07-14T06:54:05 IST" name="launchBrowser" finished-at="2020-07-14T06:54:15 IST" duration-ms="9539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginApp()[pri:1, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:34:04 IST" name="loginApp" finished-at="2020-07-12T06:34:10 IST" duration-ms="5743" status="PASS">
+        <test-method signature="loginApp()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" started-at="2020-07-14T06:54:15 IST" name="loginApp" finished-at="2020-07-14T06:54:20 IST" duration-ms="5095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="searchUser()[pri:2, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:34:10 IST" name="searchUser" finished-at="2020-07-12T06:34:12 IST" duration-ms="2328" status="PASS">
+        <test-method signature="searchUser()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" started-at="2020-07-14T06:54:20 IST" name="searchUser" finished-at="2020-07-14T06:54:22 IST" depends-on-methods="basePackage.TestOrangeHRM.loginApp" duration-ms="2198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchUser -->
-        <test-method signature="logOut()[pri:3, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:34:12 IST" name="logOut" finished-at="2020-07-12T06:34:13 IST" duration-ms="1193" status="PASS">
+        <test-method signature="logOut()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" started-at="2020-07-14T06:54:22 IST" name="logOut" finished-at="2020-07-14T06:54:23 IST" depends-on-methods="basePackage.TestOrangeHRM.searchUser" duration-ms="1262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:basePackage.TestOrangeHRM@23986957]" started-at="2020-07-12T06:34:13 IST" name="afterClass" finished-at="2020-07-12T06:34:14 IST" duration-ms="766" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:basePackage.TestOrangeHRM@43ee72e6]" started-at="2020-07-14T06:54:23 IST" name="afterClass" finished-at="2020-07-14T06:54:24 IST" duration-ms="801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
