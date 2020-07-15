@@ -1,22 +1,41 @@
 package basePackage;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class TestOrangeHRM {
 
-	ChromeDriver driver;
-	String webDriverPath = System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\chromedriver_win32\\chromedriver.exe");
-	String URL = "https://opensource-demo.orangehrmlive.com/";
-	
+	WebDriver driver;
+			
 	@BeforeClass (alwaysRun = true)
-	public void launchBrowser() {
-		driver = new ChromeDriver();
+	@Parameters({"URL","BrowserType"})
+	public void launchBrowser(String URL, String strBrowserType) {
+		if(strBrowserType.equals("Chrome"))
+		{
+			String webDriverPath = System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\chromedriver_win32\\chromedriver.exe");
+			driver = new ChromeDriver();
+		}
+		else if(strBrowserType.equals("FireFox"))
+		{
+			String webDriverPath = System.setProperty("webdriver.gecko.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		}
+//		else if(strBrowserType.equals("Edge"))
+//		{
+//			String webDriverPath = System.setProperty("webdriver.gecko.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\geckodriver-v0.26.0-win64\\geckodriver.exe");
+//			driver = new EdgeDriver();
+//		}
 		driver.manage().window().maximize();
 		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
