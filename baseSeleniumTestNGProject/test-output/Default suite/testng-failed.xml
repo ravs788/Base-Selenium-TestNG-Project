@@ -5,7 +5,8 @@
     <classes>
       <class name="basePackage.TestOrangeHRM">
         <methods>
-          <include name="searchEmployee"/>
+          <include name="searchUser" invocation-numbers="0"/>
+          <include name="logOut"/>
           <include name="afterClass"/>
           <include name="loginApp"/>
           <include name="launchBrowser"/>

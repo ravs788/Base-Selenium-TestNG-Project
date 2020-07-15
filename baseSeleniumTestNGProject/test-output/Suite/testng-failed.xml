@@ -12,7 +12,9 @@
         <methods>
           <include name="searchUser"/>
           <include name="logOut"/>
+          <include name="afterClass"/>
           <include name="loginApp"/>
+          <include name="launchBrowser"/>
         </methods>
       </class> <!-- basePackage.TestOrangeHRM -->
     </classes>
