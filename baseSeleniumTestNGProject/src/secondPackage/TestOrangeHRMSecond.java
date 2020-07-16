@@ -1,8 +1,9 @@
-package basePackage;
+package secondPackage;
 
 import org.testng.annotations.Test;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
@@ -16,15 +17,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-/**
- * @author ravshan
- *
- */
-/**
- * @author ravshan
- *
- */
-public class TestOrangeHRM {
+public class TestOrangeHRMSecond extends InheritedDataClass{
 
 	WebDriver driver;
 			
@@ -36,7 +29,7 @@ public class TestOrangeHRM {
 	 */
 	@BeforeClass (alwaysRun = true)
 	@Parameters({"URL","BrowserType"})
-	public void launchBrowser(String URL, String strBrowserType) {
+	public void launchBrowser(@Optional ("https://opensource-demo.orangehrmlive.com/") String URL, @Optional ("Chrome") String strBrowserType) {
 		if(strBrowserType.toLowerCase().equals("chrome"))
 		{			
 			String webDriverPath = System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\chromedriver_win32\\chromedriver.exe");
@@ -62,7 +55,6 @@ public class TestOrangeHRM {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
-	
 	/**
 	 * Function to Log In to the App
 	 * @param userName - UserName for log in
@@ -71,7 +63,7 @@ public class TestOrangeHRM {
 	 * @param nextMenu - Not Used
 	 * Return Type : Void
 	 */
-	@Test(groups = {"Smoke", "Sanity"}, dataProviderClass = TestData.class, dataProvider = "testDataMethod")	
+	@Test(groups = {"Smoke", "Sanity"}, dataProvider = "testDataMethod")
 	public void loginApp(String userName, String password, String searchUser, String nextMenu) {
 		
 		driver.findElement(By.id("txtUsername")).sendKeys(userName);
@@ -90,7 +82,7 @@ public class TestOrangeHRM {
 	 * Return Type : Void
 	 * @throws InterruptedException
 	 */
-	@Test(dependsOnMethods="loginApp", groups = "Smoke", dataProviderClass = TestData.class, dataProvider = "testDataMethod")
+	@Test(dependsOnMethods="loginApp", groups = "Smoke", dataProvider = "testDataMethod")
 	public void searchUser(String userName, String password, String searchUser, String nextMenu) throws InterruptedException {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'"+userName+"')]")).click();
@@ -108,7 +100,7 @@ public class TestOrangeHRM {
 	 * Return Type : Void
 	 * @throws InterruptedException
 	 */
-	@Test(dependsOnMethods="loginApp", groups = "Sanity", dataProviderClass = TestData.class, dataProvider = "testDataMethod")
+	@Test(dependsOnMethods="loginApp", groups = "Sanity", dataProvider = "testDataMethod")
 	public void searchEmployee(String userName, String password, String searchEmployee, String nextMenu) throws InterruptedException {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'"+nextMenu+"')]")).click();		
