@@ -9,8 +9,10 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
@@ -22,20 +24,25 @@ public class TestOrangeHRM {
 	@Parameters({"URL","BrowserType"})
 	public void launchBrowser(String URL, String strBrowserType) {
 		if(strBrowserType.equals("Chrome"))
-		{
+		{			
 			String webDriverPath = System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\chromedriver_win32\\chromedriver.exe");
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            options.addArguments("window-size=1200x600");
+			driver = new ChromeDriver(options);
 		}
 		else if(strBrowserType.equals("FireFox"))
 		{
 			String webDriverPath = System.setProperty("webdriver.gecko.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\geckodriver-v0.26.0-win64\\geckodriver.exe");
-			driver = new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions();
+			options.setHeadless(true);
+			driver = new FirefoxDriver(options);
 		}
-//		else if(strBrowserType.equals("Edge"))
-//		{
-//			String webDriverPath = System.setProperty("webdriver.gecko.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\geckodriver-v0.26.0-win64\\geckodriver.exe");
-//			driver = new EdgeDriver();
-//		}
+		else if(strBrowserType.equals("Edge"))
+		{
+			String webDriverPath = System.setProperty("webdriver.edge.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\edgedriver_win64\\msedgedriver.exe");
+			driver = new EdgeDriver();
+		}
 		driver.manage().window().maximize();
 		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -63,9 +70,9 @@ public class TestOrangeHRM {
 	@Test(dependsOnMethods="loginApp", groups = "Sanity", dataProviderClass = TestData.class, dataProvider = "testDataMethod")
 	public void searchEmployee(String userName, String password, String searchUser, String nextMenu) throws InterruptedException {
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'"+nextMenu+"')]")).click();
-//		driver.findElement(By.id("menu_pim_viewEmployeeList")).click();
-		driver.findElement(By.id("empsearch_employee_name_empName")).clear();
+		driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'"+nextMenu+"')]")).click();		
+		Thread.sleep(2000);
+		driver.findElement(By.id("empsearch_employee_name_empName")).click();
 		driver.findElement(By.id("empsearch_employee_name_empName")).sendKeys(searchUser);
 		driver.findElement(By.xpath("//div[@class='ac_results']/ul/li/strong[contains(text(),'"+searchUser+"')]")).click();
 		driver.findElement(By.id("searchBtn")).click();
