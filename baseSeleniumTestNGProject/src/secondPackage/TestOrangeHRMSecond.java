@@ -104,12 +104,12 @@ public class TestOrangeHRMSecond extends InheritedDataClass{
 	public void searchEmployee(String userName, String password, String searchEmployee, String nextMenu) throws InterruptedException {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'"+nextMenu+"')]")).click();		
-		Thread.sleep(2000);
 		driver.findElement(By.id("empsearch_employee_name_empName")).click();
 		driver.findElement(By.id("empsearch_employee_name_empName")).sendKeys(searchEmployee);
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@class='ac_results']/ul/li/strong[contains(text(),'"+searchEmployee+"')]")).click();
+		driver.findElement(By.xpath("//div[@class='ac_results']/ul/li[1]")).click();
 		driver.findElement(By.id("searchBtn")).click();
+		Thread.sleep(2000);
 		String firstName = searchEmployee.split(" ")[0];
 		Assert.assertTrue(driver.findElement(By.xpath(("//table[@id='resultTable']/tbody/tr[1]/td[3]/a[contains(text(),'"+firstName+"')]"))).isDisplayed(),"Search successful");
 	}

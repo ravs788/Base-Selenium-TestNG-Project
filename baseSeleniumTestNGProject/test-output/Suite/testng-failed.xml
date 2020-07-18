@@ -5,14 +5,14 @@
   <test thread-count="5" parallel="tests" name="Test on Edge(failed)">
     <parameter name="BrowserType" value="Edge"/>
     <classes>
-      <class name="basePackage.TestOrangeHRM">
+      <class name="secondPackage.TestOrangeHRMSecond">
         <methods>
-          <include name="searchEmployee" invocation-numbers="0"/>
           <include name="afterClass"/>
-          <include name="loginApp"/>
           <include name="launchBrowser"/>
+          <include name="searchEmployee" invocation-numbers="0"/>
+          <include name="loginApp"/>
         </methods>
-      </class> <!-- basePackage.TestOrangeHRM -->
+      </class> <!-- secondPackage.TestOrangeHRMSecond -->
     </classes>
   </test> <!-- Test on Edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->
