@@ -5,4 +5,4 @@
 5) Added Edge Config + Headless Execution for Chrome and Firefox - Version 5
 6) Added a 2nd package - Support for running both packages using a new TestNG.xml, parallel execution of all instances, For secondPackage - Inherit dataProvider from Base Class -    Version 6
 7) Convert to a maven project - Maven Surefire Plugin + Maven Compiler Plugin - Version 7
-8) 8) Restructure folders + Add Extended Element Operations (Click and Send Values to Elements) - Version 8
+8) Restructure folders + Add Extended Element Operations (Click and Send Values to Elements) - Version 8
