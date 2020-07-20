@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="URL" value="https://opensource-demo.orangehrmlive.com/"/>
-  <test thread-count="5" parallel="tests" name="Test on Edge(failed)">
-    <parameter name="BrowserType" value="Edge"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="secondPackage.TestOrangeHRMSecond">
+      <class name="test.basePackage.TestOrangeHRM">
         <methods>
-          <include name="afterClass"/>
           <include name="launchBrowser"/>
-          <include name="searchEmployee" invocation-numbers="0"/>
-          <include name="loginApp"/>
+          <include name="searchUser"/>
+          <include name="loginApp" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="searchEmployee"/>
+          <include name="logOut"/>
         </methods>
-      </class> <!-- secondPackage.TestOrangeHRMSecond -->
+      </class> <!-- test.basePackage.TestOrangeHRM -->
     </classes>
-  </test> <!-- Test on Edge(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

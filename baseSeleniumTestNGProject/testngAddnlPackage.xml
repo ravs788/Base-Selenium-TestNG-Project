@@ -5,22 +5,22 @@
   <test thread-count="5" name="Test on Edge">
   	<parameter name="BrowserType" value = "Edge"/>
     <packages>
-      <package name="secondPackage"/>
-      <package name="basePackage"/>
+      <package name="test.secondPackage"/>
+      <package name="test.basePackage"/>
     </packages>
   </test> <!-- Test -->
   <test thread-count="5" name="Test on Chrome">
   	<parameter name="BrowserType" value = "Chrome"/>
     <packages>
-      <package name="secondPackage"/>
-      <package name="basePackage"/>
+      <package name="test.secondPackage"/>
+      <package name="test.basePackage"/>
     </packages>
   </test> <!-- Test -->
   <test thread-count="5" name="Test on FireFox">
   	<parameter name="BrowserType" value = "FireFox"/>
     <packages>
-      <package name="secondPackage"/>
-      <package name="basePackage"/>
+      <package name="test.secondPackage"/>
+      <package name="test.basePackage"/>
     </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
