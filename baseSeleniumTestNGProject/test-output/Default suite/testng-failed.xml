@@ -7,9 +7,8 @@
         <methods>
           <include name="launchBrowser"/>
           <include name="searchUser"/>
-          <include name="loginApp" invocation-numbers="0"/>
+          <include name="loginApp"/>
           <include name="afterClass"/>
-          <include name="searchEmployee"/>
           <include name="logOut"/>
         </methods>
       </class> <!-- test.basePackage.TestOrangeHRM -->

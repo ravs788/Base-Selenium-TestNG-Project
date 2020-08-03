@@ -1,5 +1,6 @@
 package main.framework;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
@@ -16,32 +17,45 @@ public class BaseClass {
 	private WebDriver driver;
 	protected static final Logger logger = LogManager.getLogger(BaseClass.class);
 
-	public WebDriver setup(String URL, String strBrowserType)
+	public WebDriver setup(String URL, String strBrowserType) throws IOException
 	{
-		if(strBrowserType.toLowerCase().equals("chrome"))
+		ReadConfig config = new ReadConfig();
+		String[] Config_Keys = config.ReadFile().split(":");
+		String BROWSER1 = Config_Keys[0];
+		String BROWSER2 = Config_Keys[1];
+		String BROWSER3 = Config_Keys[2];
+		String CHROME_HEADLESS = Config_Keys[3];
+		String FIREFOX_HEADLESS = Config_Keys[4];
+//		String WEBDRIVER_WAIT = Config_Keys[5];
+		String IMPLICIT_WAIT = Config_Keys[6];
+		String PAGELOAD_TIMEOUT = Config_Keys[7];
+		
+		
+		if(strBrowserType.toLowerCase().equals(BROWSER1.toLowerCase()))
 		{			
 			String webDriverPath = System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\chromedriver_win32\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headless");
-			options.addArguments("window-size=1200x600");
+			if (!CHROME_HEADLESS.equals(""))
+				options.addArguments(CHROME_HEADLESS);
 			driver = new ChromeDriver(options);
 		}
-		else if(strBrowserType.toLowerCase().equals("firefox"))
+		else if(strBrowserType.toLowerCase().equals(BROWSER2.toLowerCase()))
 		{
 			String webDriverPath = System.setProperty("webdriver.gecko.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\geckodriver-v0.26.0-win64\\geckodriver.exe");
 			FirefoxOptions options = new FirefoxOptions();
-			options.setHeadless(true);
+			options.setHeadless(Boolean.parseBoolean(FIREFOX_HEADLESS));
 			driver = new FirefoxDriver(options);
 		}
-		else if(strBrowserType.toLowerCase().equals("edge"))
+		else if(strBrowserType.toLowerCase().equals(BROWSER3.toLowerCase()))
 		{
 			String webDriverPath = System.setProperty("webdriver.edge.driver", "C:\\Users\\ravshan\\OneDrive - Microsoft\\Software\\edgedriver_win64\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		}
 		driver.manage().window().maximize();
 		driver.get(URL);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		logger.debug("Browser - {} - launched successfull",strBrowserType);
+		driver.manage().timeouts().implicitlyWait(Long.parseLong(IMPLICIT_WAIT), TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Long.parseLong(PAGELOAD_TIMEOUT), TimeUnit.SECONDS);
+		logger.debug("Browser - {} - launched successfully",strBrowserType);
 		return driver;
 	}
 	

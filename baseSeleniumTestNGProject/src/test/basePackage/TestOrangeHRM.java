@@ -9,15 +9,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
-import java.util.concurrent.TimeUnit;
+import java.io.IOException;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
@@ -30,10 +27,11 @@ public class TestOrangeHRM extends BaseClass{
 	 * @param URL - URL of the Application
 	 * @param strBrowserType - Browser to be Used
 	 * Return Type : Void
+	 * @throws IOException 
 	 */
 	@BeforeClass (alwaysRun = true)
 	@Parameters({"URL","BrowserType"})
-	public void launchBrowser(@Optional ("https://opensource-demo.orangehrmlive.com/") String URL, @Optional ("firefox") String strBrowserType) {
+	public void launchBrowser(@Optional ("https://opensource-demo.orangehrmlive.com/") String URL, @Optional ("chrome") String strBrowserType) throws IOException {
 		logger.info("------------------------------------------------------");
 		logger.info("------------Started Test on Browser {} ---------------",strBrowserType);
 		driver = setup(URL, strBrowserType);
@@ -76,11 +74,15 @@ public class TestOrangeHRM extends BaseClass{
 		WebElement firstMenu = driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]"));
 		
 		operations.ClickOperation(firstMenu);
+		List<WebElement> searchTextField = driver.findElements(By.id("searchSystemUser_userName"));
+		if(searchTextField.size()==0)
+			operations.ClickOperation(firstMenu);	
 		
-		WebElement searchTextField = driver.findElement(By.id("searchSystemUser_userName"));
+		
+		WebElement searchTextField1 = driver.findElement(By.id("searchSystemUser_userName"));
 		WebElement searchButton = driver.findElement(By.id("searchBtn"));
 		
-		operations.EnterValue(searchTextField, userName);
+		operations.EnterValue(searchTextField1, userName);
 		operations.ClickOperation(searchButton);
 		Assert.assertTrue(driver.findElement(By.xpath(("//table[@id='resultTable']/tbody/tr[1]/td[2]/a[contains(text(),'"+userName+"')]"))).isDisplayed(),"Search successful");
 		logger.info("Search User successful");
@@ -102,11 +104,15 @@ public class TestOrangeHRM extends BaseClass{
 		
 		operations.ClickOperation(nextMenuField);
 		
-		WebElement searchTextField = driver.findElement(By.id("empsearch_employee_name_empName"));
+		List<WebElement> searchTextField = driver.findElements(By.id("empsearch_employee_name_empName"));
+		if(searchTextField.size()==0)
+			operations.ClickOperation(nextMenuField);	
+		
 		WebElement searchButton = driver.findElement(By.id("searchBtn")); 
 		
-		operations.ClickOperation(searchTextField);
-		operations.EnterValue(searchTextField, searchEmployee);
+		WebElement searchTextField1 = driver.findElement(By.id("empsearch_employee_name_empName"));
+		operations.ClickOperation(searchTextField1);
+		operations.EnterValue(searchTextField1, searchEmployee);
 		
 		WebElement searchResultDropDown = driver.findElement(By.xpath("//div[@class='ac_results']/ul/li[1]"));
 		
@@ -142,6 +148,7 @@ public class TestOrangeHRM extends BaseClass{
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		tearDown();
+		
 		logger.info("-----------------------Ended Test --------------------");
 		logger.info("------------------------------------------------------");
 	}
