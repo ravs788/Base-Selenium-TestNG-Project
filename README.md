@@ -7,3 +7,4 @@
 7) Convert to a maven project - Maven Surefire Plugin + Maven Compiler Plugin - Version 7
 8) Restructure folders + Add Extended Element Operations (Click and Send Values to Elements) - Version 8
 9) Added logging using log4j2 - Version 9
+10)  Added TestListener and started reading configurable values from config file - Version 10
