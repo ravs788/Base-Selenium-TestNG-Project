@@ -1,0 +1,222 @@
+[INFO ] 2020-08-07 06:10:42.530 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 06:10:42.561 [main] BaseClass - ------------Started Test on Browser Edge ---------------
+[DEBUG] 2020-08-07 06:10:59.238 [main] BaseClass - Browser - Edge - launched successfully
+[INFO ] 2020-08-07 06:10:59.448 [main] BaseClass - Test loginApp started
+[DEBUG] 2020-08-07 06:11:00.567 [main] BaseClass - Enter value - Admin - in element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 06:11:01.297 [main] BaseClass - Enter value - admin123 - in element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 06:11:06.906 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 06:11:07.017 [main] BaseClass - Login successful
+[INFO ] 2020-08-07 06:11:07.391 [main] BaseClass - Test loginApp passed
+[INFO ] 2020-08-07 06:11:07.405 [main] BaseClass - Test searchEmployee started
+[DEBUG] 2020-08-07 06:11:09.396 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[DEBUG] 2020-08-07 06:11:09.813 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> id: empsearch_employee_name_empName] - successful
+[DEBUG] 2020-08-07 06:11:10.320 [main] BaseClass - Enter value - Linda Anderson - in element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> id: empsearch_employee_name_empName] - successful
+[DEBUG] 2020-08-07 06:11:10.643 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> xpath: //div[@class='ac_results']/ul/li[1]] - successful
+[DEBUG] 2020-08-07 06:11:11.554 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 06:11:11.669 [main] BaseClass - Search Employee successful
+[INFO ] 2020-08-07 06:11:11.714 [main] BaseClass - Test searchEmployee passed
+[INFO ] 2020-08-07 06:11:11.723 [main] BaseClass - Test searchUser started
+[DEBUG] 2020-08-07 06:11:14.012 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]] - successful
+[DEBUG] 2020-08-07 06:11:14.584 [main] BaseClass - Enter value - Admin - in element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> id: searchSystemUser_userName] - successful
+[DEBUG] 2020-08-07 06:11:15.517 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 06:11:15.623 [main] BaseClass - Search User successful
+[INFO ] 2020-08-07 06:11:15.628 [main] BaseClass - Test searchUser passed
+[INFO ] 2020-08-07 06:11:15.636 [main] BaseClass - Test logOut started
+[DEBUG] 2020-08-07 06:11:15.938 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> xpath: //a[contains(text(),'Welcome Admin')]] - successful
+[DEBUG] 2020-08-07 06:11:17.878 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (2c229d8b6456ffd08a0e911744349ea5)] -> xpath: //a[contains(text(),'Logout')]] - successful
+[INFO ] 2020-08-07 06:11:17.944 [main] BaseClass - Logout successful
+[INFO ] 2020-08-07 06:11:17.971 [main] BaseClass - Test logOut passed
+[DEBUG] 2020-08-07 06:11:23.740 [main] BaseClass - Browser closed and process killed successfully
+[INFO ] 2020-08-07 06:11:23.740 [main] BaseClass - -----------------------Ended Test --------------------
+[INFO ] 2020-08-07 06:11:23.741 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 06:11:23.832 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 06:11:23.832 [main] BaseClass - ------------Started Test on Browser Chrome ---------------
+[DEBUG] 2020-08-07 06:11:39.158 [main] BaseClass - Browser - Chrome - launched successfully
+[INFO ] 2020-08-07 06:11:39.164 [main] BaseClass - Test loginApp started
+[DEBUG] 2020-08-07 06:11:39.800 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 06:11:40.176 [main] BaseClass - Enter value - admin123 - in element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 06:11:45.009 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 06:11:45.095 [main] BaseClass - Login successful
+[INFO ] 2020-08-07 06:11:45.098 [main] BaseClass - Test loginApp passed
+[INFO ] 2020-08-07 06:11:45.104 [main] BaseClass - Test searchEmployee started
+[DEBUG] 2020-08-07 06:11:47.013 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[DEBUG] 2020-08-07 06:11:47.720 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> id: empsearch_employee_name_empName] - successful
+[DEBUG] 2020-08-07 06:11:48.300 [main] BaseClass - Enter value - Linda Anderson - in element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> id: empsearch_employee_name_empName] - successful
+[DEBUG] 2020-08-07 06:11:48.565 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> xpath: //div[@class='ac_results']/ul/li[1]] - successful
+[DEBUG] 2020-08-07 06:11:49.327 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 06:11:49.434 [main] BaseClass - Search Employee successful
+[INFO ] 2020-08-07 06:11:49.437 [main] BaseClass - Test searchEmployee passed
+[INFO ] 2020-08-07 06:11:49.442 [main] BaseClass - Test searchUser started
+[DEBUG] 2020-08-07 06:11:51.868 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]] - successful
+[DEBUG] 2020-08-07 06:11:52.384 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> id: searchSystemUser_userName] - successful
+[DEBUG] 2020-08-07 06:11:53.252 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 06:11:53.396 [main] BaseClass - Search User successful
+[INFO ] 2020-08-07 06:11:53.398 [main] BaseClass - Test searchUser passed
+[INFO ] 2020-08-07 06:11:53.403 [main] BaseClass - Test logOut started
+[DEBUG] 2020-08-07 06:11:54.130 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> xpath: //a[contains(text(),'Welcome Admin')]] - successful
+[DEBUG] 2020-08-07 06:11:55.782 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (d8182b4617597769fca6ef9abee76ef9)] -> xpath: //a[contains(text(),'Logout')]] - successful
+[INFO ] 2020-08-07 06:11:55.835 [main] BaseClass - Logout successful
+[INFO ] 2020-08-07 06:11:55.838 [main] BaseClass - Test logOut passed
+[DEBUG] 2020-08-07 06:12:14.999 [main] BaseClass - Browser closed and process killed successfully
+[INFO ] 2020-08-07 06:12:15.000 [main] BaseClass - -----------------------Ended Test --------------------
+[INFO ] 2020-08-07 06:12:15.000 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 06:12:15.015 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 06:12:15.015 [main] BaseClass - ------------Started Test on Browser FireFox ---------------
+[DEBUG] 2020-08-07 06:12:27.234 [main] BaseClass - Browser - FireFox - launched successfully
+[INFO ] 2020-08-07 06:12:27.239 [main] BaseClass - Test loginApp started
+[DEBUG] 2020-08-07 06:12:27.915 [main] BaseClass - Enter value - Admin - in element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 06:12:28.431 [main] BaseClass - Enter value - admin123 - in element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 06:12:34.079 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 06:12:34.140 [main] BaseClass - Login successful
+[INFO ] 2020-08-07 06:12:34.142 [main] BaseClass - Test loginApp passed
+[INFO ] 2020-08-07 06:12:34.147 [main] BaseClass - Test searchEmployee started
+[DEBUG] 2020-08-07 06:12:37.581 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[DEBUG] 2020-08-07 06:12:39.020 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> id: empsearch_employee_name_empName] - successful
+[DEBUG] 2020-08-07 06:12:39.945 [main] BaseClass - Enter value - Linda Anderson - in element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> id: empsearch_employee_name_empName] - successful
+[DEBUG] 2020-08-07 06:12:40.582 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> xpath: //div[@class='ac_results']/ul/li[1]] - successful
+[DEBUG] 2020-08-07 06:12:41.884 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 06:12:42.050 [main] BaseClass - Search Employee successful
+[INFO ] 2020-08-07 06:12:42.052 [main] BaseClass - Test searchEmployee passed
+[INFO ] 2020-08-07 06:12:42.057 [main] BaseClass - Test searchUser started
+[DEBUG] 2020-08-07 06:12:44.333 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]] - successful
+[DEBUG] 2020-08-07 06:12:44.844 [main] BaseClass - Enter value - Admin - in element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> id: searchSystemUser_userName] - successful
+[DEBUG] 2020-08-07 06:12:46.071 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 06:12:46.230 [main] BaseClass - Search User successful
+[INFO ] 2020-08-07 06:12:46.232 [main] BaseClass - Test searchUser passed
+[INFO ] 2020-08-07 06:12:46.237 [main] BaseClass - Test logOut started
+[DEBUG] 2020-08-07 06:12:46.640 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> xpath: //a[contains(text(),'Welcome Admin')]] - successful
+[DEBUG] 2020-08-07 06:12:47.971 [main] BaseClass - Click on element - [[FirefoxDriver: firefox on WINDOWS (9623edb8-885e-4c04-9d6d-b9faaf92fa1d)] -> xpath: //a[contains(text(),'Logout')]] - successful
+[INFO ] 2020-08-07 06:12:48.073 [main] BaseClass - Logout successful
+[INFO ] 2020-08-07 06:12:48.239 [main] BaseClass - Test logOut passed
+[DEBUG] 2020-08-07 06:13:25.287 [main] BaseClass - Browser closed and process killed successfully
+[INFO ] 2020-08-07 06:13:25.287 [main] BaseClass - -----------------------Ended Test --------------------
+[INFO ] 2020-08-07 06:13:25.287 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 07:36:18.441 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 07:36:18.478 [main] BaseClass - ------------Started Test on Browser Edge ---------------
+[DEBUG] 2020-08-07 07:36:30.677 [main] BaseClass - Browser - Edge - launched successfully
+[INFO ] 2020-08-07 07:36:30.795 [main] BaseClass - Test loginApp started
+[DEBUG] 2020-08-07 07:36:31.515 [main] BaseClass - Enter value - Admin - in element - [[EdgeDriver: msedge on WINDOWS (beeddf9cc8eda91d82e2b01f685e3206)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 07:36:31.907 [main] BaseClass - Enter value - admin123 - in element - [[EdgeDriver: msedge on WINDOWS (beeddf9cc8eda91d82e2b01f685e3206)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 07:36:36.814 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (beeddf9cc8eda91d82e2b01f685e3206)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 07:36:36.951 [main] BaseClass - Login successful
+[INFO ] 2020-08-07 07:36:37.277 [main] BaseClass - Test loginApp passed
+[INFO ] 2020-08-07 07:36:37.287 [main] BaseClass - Test searchEmployee started
+[DEBUG] 2020-08-07 07:36:39.341 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (beeddf9cc8eda91d82e2b01f685e3206)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[ERROR] 2020-08-07 07:36:49.542 [main] BaseClass - Test searchEmployee failed
+[ERROR] 2020-08-07 07:36:49.624 [main] BaseClass - Test searchEmployee failed
+[INFO ] 2020-08-07 07:41:08.423 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 07:41:08.438 [main] BaseClass - ------------Started Test on Browser chrome ---------------
+[DEBUG] 2020-08-07 07:41:22.769 [main] BaseClass - Browser - chrome - launched successfully
+[DEBUG] 2020-08-07 07:41:23.356 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 07:41:23.758 [main] BaseClass - Enter value - admin123 - in element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 07:41:28.527 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 07:41:28.575 [main] BaseClass - Login successful
+[DEBUG] 2020-08-07 07:41:30.772 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[DEBUG] 2020-08-07 07:41:42.549 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]] - successful
+[DEBUG] 2020-08-07 07:41:43.160 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> id: searchSystemUser_userName] - successful
+[DEBUG] 2020-08-07 07:41:44.172 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 07:41:44.218 [main] BaseClass - Search User successful
+[DEBUG] 2020-08-07 07:41:44.397 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> xpath: //a[contains(text(),'Welcome Admin')]] - successful
+[DEBUG] 2020-08-07 07:41:46.035 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (100638b77e145916b6dea5a5c41c075b)] -> xpath: //a[contains(text(),'Logout')]] - successful
+[INFO ] 2020-08-07 07:41:46.115 [main] BaseClass - Logout successful
+[DEBUG] 2020-08-07 07:41:47.853 [main] BaseClass - Browser closed and process killed successfully
+[INFO ] 2020-08-07 07:41:47.853 [main] BaseClass - -----------------------Ended Test --------------------
+[INFO ] 2020-08-07 07:41:47.853 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 07:51:05.233 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 07:51:05.259 [main] BaseClass - ------------Started Test on Browser Edge ---------------
+[DEBUG] 2020-08-07 07:51:19.969 [main] BaseClass - Browser - Edge - launched successfully
+[INFO ] 2020-08-07 07:51:20.085 [main] BaseClass - Test loginApp started
+[DEBUG] 2020-08-07 07:51:21.199 [main] BaseClass - Enter value - Admin - in element - [[EdgeDriver: msedge on WINDOWS (785efcef4856514ed54571ca8c4eee12)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 07:51:22.015 [main] BaseClass - Enter value - admin123 - in element - [[EdgeDriver: msedge on WINDOWS (785efcef4856514ed54571ca8c4eee12)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 07:51:26.957 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (785efcef4856514ed54571ca8c4eee12)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 07:51:27.030 [main] BaseClass - Login successful
+[INFO ] 2020-08-07 07:51:27.397 [main] BaseClass - Test loginApp passed
+[INFO ] 2020-08-07 07:51:27.421 [main] BaseClass - Test searchEmployee started
+[DEBUG] 2020-08-07 07:51:29.748 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (785efcef4856514ed54571ca8c4eee12)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[ERROR] 2020-08-07 07:51:39.926 [main] BaseClass - Test searchEmployee failed
+[ERROR] 2020-08-07 07:51:40.037 [main] BaseClass - Test searchEmployee failed
+[INFO ] 2020-08-07 13:50:12.319 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 13:50:12.365 [main] BaseClass - ------------Started Test on Browser Edge ---------------
+[DEBUG] 2020-08-07 13:50:26.438 [main] BaseClass - Browser - Edge - launched successfully
+[INFO ] 2020-08-07 13:50:26.561 [main] BaseClass - Test loginApp started
+[DEBUG] 2020-08-07 13:50:28.103 [main] BaseClass - Enter value - Admin - in element - [[EdgeDriver: msedge on WINDOWS (3d2ea754a106562e417f5e3c507f1d46)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 13:50:28.622 [main] BaseClass - Enter value - admin123 - in element - [[EdgeDriver: msedge on WINDOWS (3d2ea754a106562e417f5e3c507f1d46)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 13:50:33.726 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (3d2ea754a106562e417f5e3c507f1d46)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 13:50:34.204 [main] BaseClass - Login successful
+[INFO ] 2020-08-07 13:50:34.532 [main] BaseClass - Test loginApp passed
+[INFO ] 2020-08-07 13:50:34.567 [main] BaseClass - Test searchEmployee started
+[DEBUG] 2020-08-07 13:50:36.808 [main] BaseClass - Click on element - [[EdgeDriver: msedge on WINDOWS (3d2ea754a106562e417f5e3c507f1d46)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[ERROR] 2020-08-07 13:50:46.962 [main] BaseClass - Test searchEmployee failed
+[ERROR] 2020-08-07 13:50:47.062 [main] BaseClass - Test searchEmployee failed
+[INFO ] 2020-08-07 13:54:16.165 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 13:54:16.182 [main] BaseClass - ------------Started Test on Browser chrome ---------------
+[DEBUG] 2020-08-07 13:54:29.197 [main] BaseClass - Browser - chrome - launched successfully
+[DEBUG] 2020-08-07 13:54:30.117 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 13:54:30.699 [main] BaseClass - Enter value - admin123 - in element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 13:54:35.709 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 13:54:35.943 [main] BaseClass - Login successful
+[DEBUG] 2020-08-07 13:54:38.251 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[DEBUG] 2020-08-07 13:54:50.265 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]] - successful
+[DEBUG] 2020-08-07 13:54:50.806 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> id: searchSystemUser_userName] - successful
+[DEBUG] 2020-08-07 13:54:51.685 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 13:54:51.795 [main] BaseClass - Search User successful
+[DEBUG] 2020-08-07 13:54:52.254 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> xpath: //a[contains(text(),'Welcome Admin')]] - successful
+[DEBUG] 2020-08-07 13:54:53.812 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (0e8f7e26d61b71424cdcc72199226f85)] -> xpath: //a[contains(text(),'Logout')]] - successful
+[INFO ] 2020-08-07 13:54:53.932 [main] BaseClass - Logout successful
+[DEBUG] 2020-08-07 13:55:02.898 [main] BaseClass - Browser closed and process killed successfully
+[INFO ] 2020-08-07 13:55:02.900 [main] BaseClass - -----------------------Ended Test --------------------
+[INFO ] 2020-08-07 13:55:02.900 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 13:55:27.195 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 13:55:27.227 [main] BaseClass - ------------Started Test on Browser chrome ---------------
+[DEBUG] 2020-08-07 13:55:56.644 [main] BaseClass - Browser - chrome - launched successfully
+[DEBUG] 2020-08-07 13:55:57.427 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 13:55:57.785 [main] BaseClass - Enter value - admin123 - in element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 13:56:02.471 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 13:56:02.589 [main] BaseClass - Login successful
+[DEBUG] 2020-08-07 13:56:04.875 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[DEBUG] 2020-08-07 13:56:16.662 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]] - successful
+[DEBUG] 2020-08-07 13:56:17.501 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> id: searchSystemUser_userName] - successful
+[DEBUG] 2020-08-07 13:56:18.444 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 13:56:18.595 [main] BaseClass - Search User successful
+[DEBUG] 2020-08-07 13:56:18.976 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> xpath: //a[contains(text(),'Welcome Admin')]] - successful
+[DEBUG] 2020-08-07 13:56:20.830 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (62a45cdd0f1ecae5d0b18de8db269648)] -> xpath: //a[contains(text(),'Logout')]] - successful
+[INFO ] 2020-08-07 13:56:20.976 [main] BaseClass - Logout successful
+[DEBUG] 2020-08-07 13:56:23.644 [main] BaseClass - Browser closed and process killed successfully
+[INFO ] 2020-08-07 13:56:23.645 [main] BaseClass - -----------------------Ended Test --------------------
+[INFO ] 2020-08-07 13:56:23.645 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 13:58:21.853 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 13:58:21.876 [main] BaseClass - ------------Started Test on Browser chrome ---------------
+[DEBUG] 2020-08-07 13:58:35.372 [main] BaseClass - Browser - chrome - launched successfully
+[DEBUG] 2020-08-07 13:58:36.128 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 13:58:36.491 [main] BaseClass - Enter value - admin123 - in element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 13:58:41.215 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 13:58:41.301 [main] BaseClass - Login successful
+[DEBUG] 2020-08-07 13:58:43.398 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[DEBUG] 2020-08-07 13:58:55.239 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]] - successful
+[DEBUG] 2020-08-07 13:58:55.757 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> id: searchSystemUser_userName] - successful
+[DEBUG] 2020-08-07 13:58:56.631 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 13:58:56.713 [main] BaseClass - Search User successful
+[DEBUG] 2020-08-07 13:58:57.005 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> xpath: //a[contains(text(),'Welcome Admin')]] - successful
+[DEBUG] 2020-08-07 13:58:58.239 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (fc62d5b2181795b18dcb1e09b9d1a489)] -> xpath: //a[contains(text(),'Logout')]] - successful
+[INFO ] 2020-08-07 13:58:58.346 [main] BaseClass - Logout successful
+[DEBUG] 2020-08-07 13:59:00.021 [main] BaseClass - Browser closed and process killed successfully
+[INFO ] 2020-08-07 13:59:00.022 [main] BaseClass - -----------------------Ended Test --------------------
+[INFO ] 2020-08-07 13:59:00.022 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 16:17:28.363 [main] BaseClass - ------------------------------------------------------
+[INFO ] 2020-08-07 16:17:28.445 [main] BaseClass - ------------Started Test on Browser chrome ---------------
+[DEBUG] 2020-08-07 16:17:45.724 [main] BaseClass - Browser - chrome - launched successfully
+[DEBUG] 2020-08-07 16:17:48.367 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> id: txtUsername] - successful
+[DEBUG] 2020-08-07 16:17:49.404 [main] BaseClass - Enter value - admin123 - in element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> id: txtPassword] - successful
+[DEBUG] 2020-08-07 16:17:55.923 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> id: btnLogin] - successful
+[INFO ] 2020-08-07 16:17:56.030 [main] BaseClass - Login successful
+[DEBUG] 2020-08-07 16:17:59.843 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]] - successful
+[DEBUG] 2020-08-07 16:18:12.909 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> xpath: //ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]] - successful
+[DEBUG] 2020-08-07 16:18:13.812 [main] BaseClass - Enter value - Admin - in element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> id: searchSystemUser_userName] - successful
+[DEBUG] 2020-08-07 16:18:14.982 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> id: searchBtn] - successful
+[INFO ] 2020-08-07 16:18:15.080 [main] BaseClass - Search User successful
+[DEBUG] 2020-08-07 16:18:15.436 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> xpath: //a[contains(text(),'Welcome Admin')]] - successful
+[DEBUG] 2020-08-07 16:18:17.368 [main] BaseClass - Click on element - [[ChromeDriver: chrome on WINDOWS (5ad752a10138e7f4d5c10fd9de07b4b7)] -> xpath: //a[contains(text(),'Logout')]] - successful
+[INFO ] 2020-08-07 16:18:17.460 [main] BaseClass - Logout successful
+[DEBUG] 2020-08-07 16:18:18.861 [main] BaseClass - Browser closed and process killed successfully
+[INFO ] 2020-08-07 16:18:18.864 [main] BaseClass - -----------------------Ended Test --------------------
+[INFO ] 2020-08-07 16:18:18.865 [main] BaseClass - ------------------------------------------------------

@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.basePackage.TestOrangeHRM">
+      <class name="test.java.basePackage.TestOrangeHRM">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="searchUser"/>
           <include name="loginApp"/>
+          <include name="launchBrowser"/>
+          <include name="searchEmployee" invocation-numbers="0"/>
           <include name="afterClass"/>
-          <include name="logOut"/>
         </methods>
-      </class> <!-- test.basePackage.TestOrangeHRM -->
+      </class> <!-- test.java.basePackage.TestOrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

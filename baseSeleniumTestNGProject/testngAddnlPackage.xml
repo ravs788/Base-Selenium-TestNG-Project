@@ -2,26 +2,26 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="false">
 	<listeners>
-		<listener class-name="main.framework.ListenerClass"/>
+		<listener class-name="main.java.framework.ListenerClass"/>
 	</listeners>
 	<parameter name="URL"
 		value="https://opensource-demo.orangehrmlive.com/" />
 	<test thread-count="5" name="Test on Edge">
 		<parameter name="BrowserType" value="Edge" />
 		<packages>
-			<package name="test.basePackage" />
+			<package name="test.java.basePackage" />
 		</packages>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Test on Chrome">
 		<parameter name="BrowserType" value="Chrome" />
 		<packages>
-			<package name="test.basePackage" />
+			<package name="test.java.basePackage" />
 		</packages>
 	</test> <!-- Test -->
 	<test thread-count="5" name="Test on FireFox">
 		<parameter name="BrowserType" value="FireFox" />
 		<packages>
-			<package name="test.basePackage" />
+			<package name="test.java.basePackage" />
 		</packages>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

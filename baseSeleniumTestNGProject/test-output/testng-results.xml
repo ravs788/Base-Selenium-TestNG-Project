@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-03T05:31:55 IST" name="Default suite" finished-at="2020-08-03T05:33:37 IST" duration-ms="102109">
+  <suite started-at="2020-08-08T07:52:13 IST" name="Default suite" finished-at="2020-08-08T07:52:52 IST" duration-ms="39292">
     <groups>
       <group name="Sanity">
-        <method signature="TestOrangeHRM.loginApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" name="loginApp" class="test.basePackage.TestOrangeHRM"/>
-        <method signature="TestOrangeHRM.searchEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" name="searchEmployee" class="test.basePackage.TestOrangeHRM"/>
-        <method signature="TestOrangeHRM.logOut()[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" name="logOut" class="test.basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.loginApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" name="loginApp" class="test.java.basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.searchEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" name="searchEmployee" class="test.java.basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.logOut()[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" name="logOut" class="test.java.basePackage.TestOrangeHRM"/>
       </group> <!-- Sanity -->
       <group name="Smoke">
-        <method signature="TestOrangeHRM.loginApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" name="loginApp" class="test.basePackage.TestOrangeHRM"/>
-        <method signature="TestOrangeHRM.searchUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" name="searchUser" class="test.basePackage.TestOrangeHRM"/>
-        <method signature="TestOrangeHRM.logOut()[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" name="logOut" class="test.basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.loginApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" name="loginApp" class="test.java.basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.searchUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" name="searchUser" class="test.java.basePackage.TestOrangeHRM"/>
+        <method signature="TestOrangeHRM.logOut()[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" name="logOut" class="test.java.basePackage.TestOrangeHRM"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2020-08-03T05:31:55 IST" name="Default test" finished-at="2020-08-03T05:33:37 IST" duration-ms="102109">
-      <class name="test.basePackage.TestOrangeHRM">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String, java.lang.String)[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" started-at="2020-08-03T05:31:55 IST" name="launchBrowser" finished-at="2020-08-03T05:32:06 IST" duration-ms="10756" status="PASS">
+    <test started-at="2020-08-08T07:52:13 IST" name="Default test" finished-at="2020-08-08T07:52:52 IST" duration-ms="39292">
+      <class name="test.java.basePackage.TestOrangeHRM">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String, java.lang.String)[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" started-at="2020-08-08T07:52:13 IST" name="launchBrowser" finished-at="2020-08-08T07:52:26 IST" duration-ms="13325" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" started-at="2020-08-03T05:32:06 IST" name="loginApp" data-provider="testDataMethod" finished-at="2020-08-03T05:32:13 IST" duration-ms="7288" status="PASS">
+        <test-method signature="loginApp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" started-at="2020-08-08T07:52:26 IST" name="loginApp" description="Login to the application" data-provider="testDataMethod" finished-at="2020-08-08T07:52:33 IST" duration-ms="6668" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method signature="searchEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" started-at="2020-08-03T05:32:13 IST" name="searchEmployee" data-provider="testDataMethod" finished-at="2020-08-03T05:32:17 IST" depends-on-methods="test.basePackage.TestOrangeHRM.loginApp" duration-ms="3731" status="PASS">
+        <test-method signature="searchEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" started-at="2020-08-08T07:52:33 IST" name="searchEmployee" description="Searching for employee" data-provider="testDataMethod" finished-at="2020-08-08T07:52:45 IST" depends-on-methods="test.java.basePackage.TestOrangeHRM.loginApp" duration-ms="12202" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -72,10 +72,79 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#searchButn"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-VGQDU2F', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ravshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:33213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e32e4cc406265ef12466a109cf91e29a
+*** Element info: {Using=id, value=searchButn}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#searchButn"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-VGQDU2F', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ravshan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:33213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e32e4cc406265ef12466a109cf91e29a
+*** Element info: {Using=id, value=searchButn}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at test.java.basePackage.TestOrangeHRM.searchEmployee(TestOrangeHRM.java:134)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchEmployee -->
-        <test-method signature="searchUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" started-at="2020-08-03T05:32:17 IST" name="searchUser" data-provider="testDataMethod" finished-at="2020-08-03T05:32:20 IST" depends-on-methods="test.basePackage.TestOrangeHRM.loginApp" duration-ms="2834" status="PASS">
+        <test-method signature="searchUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" started-at="2020-08-08T07:52:45 IST" name="searchUser" description="Searching for user" data-provider="testDataMethod" finished-at="2020-08-08T07:52:48 IST" depends-on-methods="test.java.basePackage.TestOrangeHRM.loginApp" duration-ms="3162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,15 +165,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchUser -->
-        <test-method signature="logOut()[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" started-at="2020-08-03T05:32:20 IST" name="logOut" finished-at="2020-08-03T05:33:36 IST" depends-on-methods="test.basePackage.TestOrangeHRM.searchUser" duration-ms="76553" status="PASS">
+        <test-method signature="logOut()[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" started-at="2020-08-08T07:52:48 IST" name="logOut" description="Log out of the application" finished-at="2020-08-08T07:52:51 IST" depends-on-methods="test.java.basePackage.TestOrangeHRM.searchUser" duration-ms="2439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.basePackage.TestOrangeHRM@5fcacc0]" started-at="2020-08-03T05:33:36 IST" name="afterClass" finished-at="2020-08-03T05:33:37 IST" duration-ms="887" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.java.basePackage.TestOrangeHRM@1e54a6b1]" started-at="2020-08-08T07:52:51 IST" name="afterClass" finished-at="2020-08-08T07:52:52 IST" duration-ms="1044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- test.basePackage.TestOrangeHRM -->
+      </class> <!-- test.java.basePackage.TestOrangeHRM -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,4 +1,4 @@
-package main.framework;
+package main.java.framework;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,18 +6,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ElementOperations extends BaseClass {
-	
+
 	private WebDriver driver;
 	private WebDriverWait wait;
-	
+
 	public ElementOperations(WebDriver driver){
 		this.driver = driver;	
 		this.wait = new WebDriverWait(this.driver, 30);		
 	}
-	
+
 	public void ClickOperation(WebElement element)
 	{
 		try {
+			waitForJSandJQueryToLoad(wait);
 			wait.until(ExpectedConditions.visibilityOf(element));
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			element.click();
@@ -26,10 +27,11 @@ public class ElementOperations extends BaseClass {
 			logger.debug("Click on element - {} - failed with exception - {} ",element, e.getMessage());
 		}
 	}
-
+	
 	public void EnterValue(WebElement element, String value)
 	{
 		try {
+			waitForJSandJQueryToLoad(wait);
 			wait.until(ExpectedConditions.visibilityOf(element));
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			element.clear();
@@ -40,14 +42,14 @@ public class ElementOperations extends BaseClass {
 			logger.debug("Enter value - {} - in element - {} - failed with exception - {} ",value,element,e.getMessage());
 		}
 	}
-	
+
 	public boolean ElementExists(WebElement element)
 	{
 		if (element.isDisplayed())
 			return true;
 		else
 			return false;
-	
+
 	}
-	
+
 }

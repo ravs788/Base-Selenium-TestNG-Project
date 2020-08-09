@@ -1,4 +1,4 @@
-package test.basePackage;
+package test.java.basePackage;
 
 import org.testng.annotations.DataProvider;
 

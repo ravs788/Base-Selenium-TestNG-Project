@@ -1,27 +1,28 @@
-package test.basePackage;
+package test.java.basePackage;
 
 import org.testng.annotations.Test;
 
-import main.framework.BaseClass;
-import main.framework.ElementOperations;
-
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import main.java.framework.BaseClass;
+import main.java.framework.ElementOperations;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class TestOrangeHRM extends BaseClass{
-
-	private WebDriver driver;
-			
+		
 	/**
 	 * Function to Launch Browser
 	 * @param URL - URL of the Application
@@ -45,13 +46,18 @@ public class TestOrangeHRM extends BaseClass{
 	 * @param nextMenu - Not Used
 	 * Return Type : Void
 	 */
-	@Test(groups = {"Smoke", "Sanity"}, dataProviderClass = TestData.class, dataProvider = "testDataMethod")
+	@Test(description = "Login to the application", groups = {"Smoke", "Sanity"}, dataProviderClass = TestData.class, dataProvider = "testDataMethod")
+	@Description("Login to the application")
+	@Epic("Epic: EP001")
+	@Feature("Feature: Main Feature")
+	@Story(value = "Base Story")
+	@Severity(SeverityLevel.CRITICAL)
 	public void loginApp(String userName, String password, String searchUser) {
 		ElementOperations operations = new ElementOperations(driver);
 		WebElement userNameField = driver.findElement(By.id("txtUsername")); 
 		WebElement passwordField = driver.findElement(By.id("txtPassword"));
 		WebElement loginButton = driver.findElement(By.id("btnLogin"));
-		
+				
 		operations.EnterValue(userNameField, userName);
 		operations.EnterValue(passwordField, password);
 		operations.ClickOperation(loginButton);
@@ -68,14 +74,19 @@ public class TestOrangeHRM extends BaseClass{
 	 * Return Type : Void
 	 * @throws InterruptedException
 	 */
-	@Test(dependsOnMethods="loginApp", groups = "Smoke", dataProviderClass = TestData.class, dataProvider = "testDataMethod")
-	public void searchUser(String userName, String password, String searchUser) throws InterruptedException {
+	@Test(description = "Searching for user",dependsOnMethods="loginApp", groups = "Smoke", dataProviderClass = TestData.class, dataProvider = "testDataMethod")
+	@Description("Searching for user")
+	@Epic("Epic: EP001")
+	@Feature("Feature: Search User")
+	@Story(value = "Search User")
+	@Severity(SeverityLevel.NORMAL)
+	public void searchUser(String userName, String password, String searchUser){
 		ElementOperations operations = new ElementOperations(driver);
 		WebElement firstMenu = driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'Admin')]"));
 		
 		operations.ClickOperation(firstMenu);
 		List<WebElement> searchTextField = driver.findElements(By.id("searchSystemUser_userName"));
-		if(searchTextField.size()==0)
+		if(searchTextField.isEmpty())
 			operations.ClickOperation(firstMenu);	
 		
 		
@@ -97,37 +108,49 @@ public class TestOrangeHRM extends BaseClass{
 	 * Return Type : Void
 	 * @throws InterruptedException
 	 */
-	@Test(dependsOnMethods="loginApp", groups = "Sanity", dataProviderClass = TestData.class, dataProvider = "testDataMethod")
-	public void searchEmployee(String userName, String password, String searchEmployee) throws InterruptedException {
-		ElementOperations operations = new ElementOperations(driver);
-		WebElement nextMenuField = driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]"));
-		
-		operations.ClickOperation(nextMenuField);
-		
-		List<WebElement> searchTextField = driver.findElements(By.id("empsearch_employee_name_empName"));
-		if(searchTextField.size()==0)
-			operations.ClickOperation(nextMenuField);	
-		
-		WebElement searchButton = driver.findElement(By.id("searchBtn")); 
-		
-		WebElement searchTextField1 = driver.findElement(By.id("empsearch_employee_name_empName"));
-		operations.ClickOperation(searchTextField1);
-		operations.EnterValue(searchTextField1, searchEmployee);
-		
-		WebElement searchResultDropDown = driver.findElement(By.xpath("//div[@class='ac_results']/ul/li[1]"));
-		
-		operations.ClickOperation(searchResultDropDown);
-		operations.ClickOperation(searchButton);
-		String firstName = searchEmployee.split(" ")[0];
-		Assert.assertTrue(driver.findElement(By.xpath(("//table[@id='resultTable']/tbody/tr[1]/td[3]/a[contains(text(),'"+firstName+"')]"))).isDisplayed(),"Search successful");
-		logger.info("Search Employee successful");
+	
+	@Test(description = "Searching for employee", dependsOnMethods="loginApp", groups = "Sanity", dataProviderClass = TestData.class, dataProvider = "testDataMethod")
+	@Description("Searching for employee")
+	@Epic("Epic: EP001")
+	@Feature("Feature: Search Employee")
+	@Story(value = "Search Employee")	
+	@Severity(SeverityLevel.NORMAL)
+	public void searchEmployee(String userName, String password, String searchEmployee){
+
+			ElementOperations operations = new ElementOperations(driver);
+			WebElement nextMenuField = driver.findElement(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li//b[contains(text(),'PIM')]"));
+			
+			operations.ClickOperation(nextMenuField);
+			
+			List<WebElement> searchTextField = driver.findElements(By.id("empsearch_employee_name_empName"));
+			if(searchTextField.isEmpty())
+				operations.ClickOperation(nextMenuField);	
+			
+			WebElement searchButton = driver.findElement(By.id("searchBtn")); 
+			
+			WebElement searchTextField1 = driver.findElement(By.id("empsearch_employee_name_empName"));
+			operations.ClickOperation(searchTextField1);
+			operations.EnterValue(searchTextField1, searchEmployee);
+			
+			WebElement searchResultDropDown = driver.findElement(By.xpath("//div[@class='ac_results']/ul/li[1]"));
+			
+			operations.ClickOperation(searchResultDropDown);
+			operations.ClickOperation(searchButton);
+			String firstName = searchEmployee.split(" ")[0];
+			Assert.assertTrue(driver.findElement(By.xpath(("//table[@id='resultTable']/tbody/tr[1]/td[3]/a[contains(text(),'"+firstName+"')]"))).isDisplayed(),"Search successful");
+			logger.info("Search Employee successful");
 	}
 
 	/**
 	 * Function to log out of the application
 	 * Return: Void
 	 */
-	@Test(dependsOnMethods="searchUser", groups = {"Smoke", "Sanity"})
+	@Test(description = "Log out of the application", dependsOnMethods="searchUser", groups = {"Smoke", "Sanity"})
+	@Description("Log out of the application")
+	@Epic("Epic: EP001")
+	@Feature("Feature: Main Feature")
+	@Story(value = "Base Story")
+	@Severity(SeverityLevel.MINOR)
 	public void logOut() {
 		ElementOperations operations = new ElementOperations(driver);
 		WebElement welcomeAdminElement = driver.findElement(By.xpath("//a[contains(text(),'Welcome Admin')]"));

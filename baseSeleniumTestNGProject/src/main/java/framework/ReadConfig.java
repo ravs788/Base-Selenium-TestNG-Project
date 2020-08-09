@@ -1,4 +1,4 @@
-package main.framework;
+package main.java.framework;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -42,7 +42,6 @@ public class ReadConfig {
 			PAGELOAD_TIMEOUT=property.getProperty("PAGELOAD.TIMEOUT");
 			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally
 		{
