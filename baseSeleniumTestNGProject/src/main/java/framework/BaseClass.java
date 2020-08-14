@@ -19,25 +19,28 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentReports;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
 	protected WebDriver driver;
 	protected static final Logger logger = LogManager.getLogger(BaseClass.class);
+	protected static ExtentReports report;
 
 	public WebDriver setup(String URL, String strBrowserType) throws IOException
 	{
 		ReadConfig config = new ReadConfig();
 		String[] Config_Keys = config.ReadFile().split(":");
-		String BROWSER1 = Config_Keys[0];
-		String BROWSER2 = Config_Keys[1];
-		String BROWSER3 = Config_Keys[2];
-		String CHROME_HEADLESS = Config_Keys[3];
-		String FIREFOX_HEADLESS = Config_Keys[4];
-//		String WEBDRIVER_WAIT = Config_Keys[5];
-		String IMPLICIT_WAIT = Config_Keys[6];
-		String PAGELOAD_TIMEOUT = Config_Keys[7];
+		final String BROWSER1 = Config_Keys[0];
+		final String BROWSER2 = Config_Keys[1];
+		final String BROWSER3 = Config_Keys[2];
+		final String CHROME_HEADLESS = Config_Keys[3];
+		final String FIREFOX_HEADLESS = Config_Keys[4];
+//		final String WEBDRIVER_WAIT = Config_Keys[5];
+		final String IMPLICIT_WAIT = Config_Keys[6];
+		final String PAGELOAD_TIMEOUT = Config_Keys[7];
 		
 		if(strBrowserType.equalsIgnoreCase(BROWSER1.toLowerCase()))
 		{				

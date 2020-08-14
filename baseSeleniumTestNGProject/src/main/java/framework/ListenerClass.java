@@ -13,7 +13,6 @@ public class ListenerClass extends BaseClass implements ITestListener {
 
 	@Override		
 	public void onStart(ITestContext Result) {					
-//		Result.setAttribute("WebDriver", base.getDriver());
 	}		
 
 	@Override		
